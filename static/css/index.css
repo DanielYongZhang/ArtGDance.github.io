@@ -1,0 +1,39 @@
+.teaser .columns {
+  display: flex;                   /* 使用 Flexbox 布局 */
+  flex-wrap: nowrap;               /* 强制内容不换行 */
+  justify-content: center;         /* 水平居中 */
+  align-items: flex-start;         /* 垂直顶部对齐 */
+  gap: 1rem;                       /* 列之间的间距 */
+}
+
+.teaser .column {
+  text-align: center;              /* 列内文字居中 */
+}
+
+.teaser .image {
+  aspect-ratio: 1 / 1;             /* 强制图片和视频为正方形 */
+  width: 100%;                     /* 宽度填满父容器 */
+  height: auto;                    /* 高度自适应 */
+}
+
+.teaser .image img,
+.teaser .image video {
+  width: 100%;                     /* 图片和视频宽度为 100% */
+  height: auto;                    /* 高度自适应 */
+  object-fit: cover;               /* 填满容器并保持比例 */
+  border-radius: 5px;              /* 可选：添加圆角 */
+}
+
+.teaser p {
+  margin-top: 0.5rem;              /* 设置文字与图片或视频的间距 */
+  font-size: 0.9rem;               /* 调整文字大小 */
+  color: #555;                     /* 设置文字颜色 */
+}
+
+/* 视频时间样式 */
+.video-time {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
